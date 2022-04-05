@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: lemonchiffon;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photos a {
+    width: 32%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: inherit;
+    transition: filter 0.3s ease-in-out;
+}
+
+.photos a:hover {
+    filter: brightness(0.7);
+}
