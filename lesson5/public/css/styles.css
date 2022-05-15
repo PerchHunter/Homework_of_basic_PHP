@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    /*background-color: lemonchiffon;*/
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.openFormButton {
+    position: absolute;
+    right: 50px;
+    margin: auto 0;
+    font: bold 20px/20px "Times New Roman";
+    color: black;
+    background-color: inherit;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.openFormButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px !important;
+}
+
+/*=============================================================================================================*/
+/*стили всплывающего окна с формой*/
+.windowWithForm {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: inherit;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input[type=file]{
+    outline:0;
+    /*скрываем этой некрасивый инпут*/
+    opacity:0;
+    /* реакция элемента на события указателя*/
+    pointer-events:none;
+    /*отключение возможности выделения текста*/
+    user-select: none;
+}
+
+.label{
+     width:120px;
+     border:2px dashed grey;
+     border-radius:5px;
+     display:block;
+     padding: 15px;
+     transition:border 0.3s ease;
+     cursor:pointer;
+     text-align:center;
+}
+
+.attach_icon {
+     display:block;
+     font-size:42px;
+     padding-bottom:16px;
+}
+
+.attach_icon, .title {
+     color:grey;
+     transition: color 200ms ease;
+}
+
+.label:hover{
+ border:2px solid #000;
+}
+
+.label:hover .attach_icon, .label:hover .title {
+ color:#000;
+}
+
+.setImageButton {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 15px;
+    color: grey;
+    transition: border, color 200ms ease;
+    border: 1px solid gray;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.setImageButton:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+
+/*=============================================================================================================*/
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.gallery {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+}
+
+.photoWrap {
+    width: 32%;
+    height: 250px;
+    margin-bottom: 35px;
+
+}
+
+.photoWrap a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: filter 0.3s ease;
+}
+
+.photoWrap a:hover {
+    filter: brightness(0.7);
+}
+
+.photo {
+    width: inherit;
+}
+
+.contentUnderPhoto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visibilityIconWrap {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.visibility_icon {
+    color: darkgray;
+    margin-right: 10px;
+}
+
+.deleteImageButton {
+    background-color: inherit;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deleteImageButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px !important;
+}
