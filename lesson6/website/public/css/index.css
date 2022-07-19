@@ -1,0 +1,30 @@
+.header {
+    justify-content: space-between;
+}
+
+.figureLogo {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.figureLogo img{
+    height: 50px;
+    margin-right: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20pxs;
+}
+
+.goodsWrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}

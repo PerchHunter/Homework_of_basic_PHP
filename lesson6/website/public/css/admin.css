@@ -1,0 +1,29 @@
+.headerBackground {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    justify-content: end;
+}
+
+/*Стили для формы добавления товаров в каталог*/
+.addGoodsFormWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.addGoodsFieldset {
+    padding: 30px;
+    max-width: 700px;
+}
+
+.addGoodsForm input {
+    width: 460px;
+    margin-bottom: 10px;
+    height: 25px;
+    font-size: 12px;
+}
+
+
