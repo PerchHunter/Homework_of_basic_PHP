@@ -1,0 +1,108 @@
+.headerBackground {
+    display: flex;
+    align-items: center;
+}
+
+.reviewsWrap {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feedback {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 10px;
+}
+
+.metainfo {
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 10px 0 15px;
+}
+
+.reactions {
+    align-self: end;
+    margin-right: 50px;
+}
+
+.emotionForm {
+    display: flex;
+    align-items: center;
+}
+
+.countLike{
+    color: forestgreen;
+    margin-right: 10px;
+}
+
+.countDislike {
+    color: firebrick;
+    margin-left: 10px;
+}
+
+.likeForReview,
+.dislikeForReview, .submitFeedback {
+    /*font: bold 20px/20px "Times New Roman";*/
+    background-color: inherit;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.likeForReview,
+.dislikeForReview {
+    color:grey;
+    transition: all 200ms ease;
+}
+
+.likeForReview:hover,
+.dislikeForReview:hover {
+    color:#000000;
+}
+
+.likeForReview:hover,
+.dislikeForReview:hover, .submitFeedback:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px !important;
+}
+
+#setFeedbackForm {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+#setFeedbackForm > p, .capchaFeedback, .useranswerCapchaFeedback, .submitFeedback {
+    margin-top: 15px;
+}
+
+.setFeedbackFormTitle {
+    font-size: 20px;
+}
+
+.textFeedback, .usernameFeedback, .useranswerCapchaFeedback {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.capchaFeedback {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitFeedback {
+    font-weight: 700;
+}
+

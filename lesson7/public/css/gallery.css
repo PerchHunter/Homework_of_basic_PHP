@@ -1,0 +1,44 @@
+.headerBackground {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photoWrap {
+    margin: 0 1% 20px;
+}
+
+.photoWrap a {
+    display: flex;
+    transition: filter 0.3s ease;
+}
+
+.photoWrap a:hover {
+    filter: brightness(0.7);
+}
+
+.contentUnderPhoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visibilityIconWrap {
+    display: flex;
+    align-items: center;
+}
+
+.visibility_icon {
+    color: darkgray;
+    margin-right: 10px;
+}

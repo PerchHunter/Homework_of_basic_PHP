@@ -1,0 +1,10 @@
+.figureLogo {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.figureLogo img{
+    height: 35px;
+    margin-right: 20px;
+}

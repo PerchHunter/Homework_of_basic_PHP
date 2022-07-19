@@ -1,0 +1,57 @@
+.textContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 15px;
+}
+
+.textContent a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonBack {
+    background-color: inherit;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttonBack:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px !important;
+}
+
+.detailsGoodWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.detailsGoodWrap img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.goodInfo {
+    font: 400 24px/24px "Times New Roman";
+}
+
+.goodArticul {
+    opacity: 0.4;
+    font-size: 0.5em;
+}
+
+.goodName {
+    font-size: 1em;
+}
+
+.goodDescription {
+    font-size: 0.75em;
+}
+
+.goodPrice {
+    font-size: 0.75em;
+}

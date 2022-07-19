@@ -1,0 +1,142 @@
+.headerBackground {
+    background-color: darkgray;
+    position: relative;
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.headerNavigation {
+    height: 100%;
+    display: flex;
+}
+
+.headerNavigation a {
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.headerNavigation a:hover {
+    background-color: lightgray;
+}
+
+
+
+/*Стили для формы добавления товаров в каталог*/
+.addGoodsFormWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.addGoodsFieldset {
+    padding: 30px;
+    max-width: 700px;
+}
+
+.addGoodsForm input {
+    width: 460px;
+    margin-bottom: 10px;
+    height: 25px;
+    font-size: 12px;
+}
+
+/*стили для элементов фотогалереи*/
+
+.openFormButton {
+    position: absolute;
+    right: 50px;
+    margin: auto 0;
+    font: bold 20px/20px "Times New Roman";
+    background-color: inherit;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.openFormButton:hover, .comeBackButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px !important;
+}
+
+/*=============================================================================================================*/
+/*стили всплывающего окна с формой*/
+.windowWithForm {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: inherit;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.setImageInput {
+    outline:0;
+    /*скрываем этой некрасивый инпут*/
+    opacity:0;
+    /* реакция элемента на события указателя*/
+    pointer-events:none;
+    /*отключение возможности выделения текста*/
+    user-select: none;
+}
+
+.label{
+    width:120px;
+    border:2px dashed grey;
+    border-radius:5px;
+    display:block;
+    padding: 15px;
+    transition:border 0.3s ease;
+    cursor:pointer;
+    text-align:center;
+}
+
+.attach_icon {
+    display:block;
+    font-size:42px;
+    padding-bottom:16px;
+}
+
+.attach_icon, .title {
+    color:grey;
+    transition: color 200ms ease;
+}
+
+.label:hover{
+    border:2px solid #000;
+}
+
+.label:hover .attach_icon, .label:hover .title {
+    color:#000;
+}
+
+.setImageButton {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 15px;
+    color: grey;
+    transition: border, color 200ms ease;
+    border: 1px solid gray;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.setImageButton:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+
+/*=============================================================================================================*/
